@@ -26,6 +26,7 @@ unixtime	KEYWORD2
 begin	KEYWORD2
 adjust	KEYWORD2
 isrunning	KEYWORD2
+ispresent	KEYWORD2
 now	KEYWORD2
 readMemory	KEYWORD2
 writeMemory	KEYWORD2

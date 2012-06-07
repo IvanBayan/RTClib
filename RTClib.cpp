@@ -136,6 +136,12 @@ uint8_t RTC_DS1307::begin(void) {
 
 #if (ARDUINO >= 100)
 
+uint8_t RTC_DS1307::ispresent(void) {
+  Wire.beginTransmission(DS1307_ADDRESS);
+  Wire.write((uint8_t)0);
+  return ! Wire.endTransmission();
+}
+
 uint8_t RTC_DS1307::isrunning(void) {
   Wire.beginTransmission(DS1307_ADDRESS);
   Wire.write((uint8_t)0);

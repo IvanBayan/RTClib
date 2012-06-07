@@ -33,6 +33,7 @@ public:
   static uint8_t begin(void);
     static void adjust(const DateTime& dt);
     uint8_t isrunning(void);
+    uint8_t ispresent(void);
     static DateTime now();
     static uint8_t readMemory(uint8_t offset, uint8_t* data, uint8_t length);
     static uint8_t writeMemory(uint8_t offset, uint8_t* data, uint8_t length);
